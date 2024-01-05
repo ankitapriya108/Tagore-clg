@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 .contactback{
-    height: 850px;
+    height: auto;
     width: 100%;
     background:linear-gradient(rgba(0, 0, 0, 0.637) , rgba(0, 0, 0, 0.61) ,rgba(0, 0, 0, 0.541)), url("../image/Contact.jpg");
-   
+   padding-bottom: 50px;
     background-size: cover;
     background-position:center;
     
@@ -27,7 +27,7 @@
 }
 .Contactbox{
     height: auto;
-    width: 750px;
+    /* width: 750px; */
     border: 2px solid white;
     border-radius: 20px;
     color: white;
@@ -46,6 +46,7 @@
 }
 @media (max-width:785px){
     .Contactbox{
+        height: unset;
      width: auto;
     }
     

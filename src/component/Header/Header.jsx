@@ -23,27 +23,7 @@ function Header() {
   const [show, setShow] = useState(false);
 
 
-  // change navbar on scroll//
-  // const [isSticky , setIsSticky] =useState(false)
-
-
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const offset = window.scrollY;
-
-  //     // Adjust the value (e.g., 100) based on when you want the navbar to stick
-  //     setIsSticky(offset > 60);
-  //   };
-
-  //   // Attach the event listener when the component mounts
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   // Detach the event listener when the component unmounts
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
+  
 
 
 
@@ -53,7 +33,7 @@ function Header() {
   return (
     <>
      
-      <div className="mainnav">
+      <div className="wapper">
         <div className="wapper sticky-navbar">
           <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
@@ -70,8 +50,8 @@ function Header() {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                  <span> <EmailIcon color='dark' /> <a href="">tagore@gmail.com</a> </span>
-                  <span> <AddIcCallIcon /> <a href="">0988776665</a></span>
+                 <EmailIcon color='dark' /> <a href="">tagore@gmail.com</a> 
+                 <AddIcCallIcon /> <a href="">0988776665</a>
                   <button><Link to='/adminlog'>Login</Link></button>
                 </Nav>
               </Navbar.Collapse>
@@ -85,10 +65,10 @@ function Header() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto">
-             {/* <span> <EmailIcon color='dark'/><a href="mailto:tagorecollege@gmail.com">tagorecollege@gmail.com</a></span> */}
-             <span><EmailIcon color='dark' /><a href="mailto:tagore@gmail.com">tagore@gmail.com</a></span>
+           
+             <EmailIcon color='dark' /><a href="mailto:tagore@gmail.com">tagore@gmail.com</a>
 
-                <span> <AddIcCallIcon/> <a href="">+91-1234567890</a></span>
+                 <AddIcCallIcon/> <a href="">+91-1234567890</a>
                 <button><Link to='/adminlog'>Login</Link></button>
               </Nav>
             </Navbar.Collapse>
