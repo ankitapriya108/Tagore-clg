@@ -61,20 +61,6 @@ function Header() {
 
       </div>
 
-            
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ms-auto">
-           
-             <EmailIcon color='dark' /><a href="mailto:tagore@gmail.com">tagore@gmail.com</a>
-
-                 <AddIcCallIcon/> <a href="">+91-1234567890</a>
-                <button><Link to='/adminlog'>Login</Link></button>
-              </Nav>
-            </Navbar.Collapse>
-          
-       
-
       {/* ...............< Second-navbar >.................. */}
 
 
