@@ -29,13 +29,15 @@ import Regform from './component/StudentRegistration/Regform.jsx'
 import StudentPage from './component/student-page/StudentPage.jsx'
 import StudentRecord from './component/StudentRecord/StudentRecord.jsx'
 import StudentComplainBox from './component/StudentComplaint-Box/StudentComplaintBox.jsx'
-import StudentDetails from './component/StudentDetails/StudentDetails.jsx'
+import AdminAddStudentRecord from './component/AdminAddStudentRecord/AdminAddStudentRecord.jsx'
+// import StudentDetails from './component/StudentDetails/StudentDetails.jsx'
 import AllStdRecord from './component/AllStdRecord/AllStdRecord.jsx'
 import ShowStudentDetails from './component/ShowStudentDetails/ShowStudentDetails.jsx'
 import NoticeForm from './component/Notice/Notice.jsx'
 import StdResultPage from './component/StdResultPage/StdResultPage.jsx'
 import ReceiveNotice from './component/ReceiveNotice/ReceiveNotice.jsx'
 import ReceivedComplaint from './component/ReceivedComplaint/ReceivedComplaint.jsx'
+import Result from './component/Result/Result.jsx'
 import './App.css'
 
 
@@ -126,8 +128,12 @@ function App() {
                   <Route path='/AdminPage/:adminId' element={<AdminPage />} />
                   <Route path='/AdminPage/:studentId' element={<AdminPage />} />
                   <Route path='/Notice' element={<NoticeForm />} />
-                  <Route path='/StdDetails' element={<StudentDetails />} />
+                  <Route path='/AddStdRecord' element={<AdminAddStudentRecord/>} />
+
+                  {/* <Route path='/StdDetails' element={<StudentDetails />} /> */}
                   <Route path='/ReceiveComplaint' element={<ReceivedComplaint />} />
+                  <Route path='/Result' element={<Result />} />
+
 
                 </Routes>
               </>

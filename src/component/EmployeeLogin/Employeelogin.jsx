@@ -21,7 +21,7 @@ function FormExample() {
     const [validated, setValidated] = useState(false);
     const [userName, setUsername] = useState()
     const [password, setPassword] = useState()
-const [visible , setVisible] = useState(true)
+const [visible , setVisible] = useState(false)
 const [agreeTerms, setAgreeTerms] = useState(false);
 
 

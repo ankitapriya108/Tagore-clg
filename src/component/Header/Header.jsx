@@ -95,7 +95,7 @@ function Header() {
                       <Nav.Link href="#home"><Link to='/AdminRecord'>Add-Self-Record</Link></Nav.Link>
                       <Nav.Link href="#link"><Link to='/Notice'>Send Notice</Link></Nav.Link>
                       <Nav.Link href="#link"><Link to='/ReceiveComplaint'>Complain-Corner</Link></Nav.Link>
-                      <Nav.Link href="#link"><Link to='/StdDetails'>Add StudentRecord</Link></Nav.Link>
+                      <Nav.Link href="#link"><Link to='/AddStdRecord'>Add StudentRecord</Link></Nav.Link>
                       <Nav.Link href="#link"><Link to='/AllStdRecord'>Students Details</Link></Nav.Link>
 
                     </Nav>

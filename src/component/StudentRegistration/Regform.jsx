@@ -57,6 +57,7 @@ function FormExample() {
             event.stopPropagation();
         }
         setValidated(true);
+       
     };
 
     return (
@@ -144,7 +145,7 @@ function FormExample() {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required />
-                                {!emailCheck && <span>Email is Already in use</span>}
+                                {/* {!emailCheck && <span>Email is Already in use</span>} */}
                             <Form.Control.Feedback type="invalid">
                                 {/* Please provide a valid zip. */}
                             </Form.Control.Feedback>
