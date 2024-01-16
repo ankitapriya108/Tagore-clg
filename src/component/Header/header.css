@@ -1,4 +1,7 @@
+
   /* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
     margin: 0;
@@ -96,10 +99,14 @@ height: 140px;
     align-items: center;
     color: black;
 }
-
 .wapper-sec .m-auto a {
     color: black;
     text-decoration: none;
+}
+
+
+.wapper{
+    height: auto;
 }
 
 .wapper .ms-auto
@@ -177,6 +184,7 @@ background-color: white !important;
     border: 0;
   
     
+}
 }
 .wapper .ms-auto  a {
     color: #b71109;
@@ -315,11 +323,17 @@ background-color: white !important;
     height: 71px  !important;
   }
 /* ............wapper-sec.......... */
+  }
+/* ............wapper-sec..........  */
+
 
 .wapper-sec .bg-body-tertiary
 {
     background-color: rgb(32 13 105) !important;
     /* height: auto; */
+
+    height: auto;
+
     padding: 2px !important;
     text-align: center;
 }
@@ -335,6 +349,7 @@ background-color: white !important;
     border-radius: var(--bs-navbar-toggler-border-radius);
     transition: var(--bs-navbar-toggler-transition);
   } */
+
 /* .wapper-sec .me-auto
 {
     display: flex !important;
@@ -348,12 +363,11 @@ background-color: white !important;
 
 
 
+
 .wapper-sec .style {
     border: 2px solid white;
     background-color: white;
 }
-
-
 
 .wapper-sec .container
 {
@@ -379,6 +393,7 @@ background-color: white !important;
     color: black;
     text-decoration: none;
 }
+
 
 
 /* ............<slider>.................. */
@@ -417,10 +432,28 @@ background-color: white !important;
     text-align: left;
 }
 
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+      /* padding-right: var(--bs-navbar-nav-link-padding-x);
+      padding-left: var(--bs-navbar-nav-link-padding-x); */
+      width: 185px;
+    }}
+@media (max-width:995px){
+    
+   .wapper-sec button.navbar-toggler.collapsed {
+    color: white !important;
+    background-color: white;
+}
+.wapper-sec a.nav-link {
+    margin-top: 10px;
+}
+
 .wapper-sec button.navbar-toggler {
     background-color: white;
 }
 .wapper svg.MuiSvgIcon-root.MuiSvgIcon-colorDark.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+
     margin-top: 10px;
 }
 
@@ -431,4 +464,8 @@ background-color: white !important;
         color: var(--bs-navbar-color);
         background-color: #fff;
     }
+
+    margin-top: 10px;
+}
+
 }

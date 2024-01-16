@@ -190,6 +190,7 @@ margin: auto;
 .mapbox {
     margin-top: 20px;
 }
+
 @media(max-width:1500px)  {
     .about-college h2 {
         text-align: center;
@@ -332,6 +333,7 @@ margin: auto;
     margin-top: 20px;
 }
 }
+
 @media(max-width:1500px)  {
     .about-college h2 {
         text-align: center;
