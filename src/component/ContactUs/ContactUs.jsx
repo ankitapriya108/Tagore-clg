@@ -16,7 +16,8 @@ const ContactUs = () => {
           <Col md={8}>
           
                
-               <div className='Contactbox'>
+               <div className='Contactbox'> 
+               
                <ul>
                 <li>Website: (tagorecollege.com)</li>
 
