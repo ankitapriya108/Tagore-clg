@@ -80,6 +80,7 @@ function FormExample() {
 
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <div className="container">
+
                     <Row className=" mb-3">
                         <Form.Group as={Col} md="4" controlId="validationCustom01">
                             <Form.Label className='emploreg'>First name</Form.Label>
@@ -110,40 +111,58 @@ function FormExample() {
                             <Form.Control
                                 required
                                 type="text"
-                                placeholder="Enter your usrername"
+                                placeholder="Create a username"
                                 value={userName}
                                 onChange={(e) => setUsername(e.target.value)}
                             />
                         </Form.Group>
 
                     </Row>
-                    <Row className="mb-3">
-                        <Form.Group as={Col} md="3" controlId="validationCustom03">
-                            <Form.Label className='emploreg'>Fathers Name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter your Fathers name"  value={fathersName}
-                                onChange={(e) => setFathername(e.target.value)} required />
-                            <Form.Control.Feedback type="invalid">
 
-                            </Form.Control.Feedback>
-                        </Form.Group>
-                        <Form.Group as={Col} md="3" controlId="validationCustom04">
-                            <Form.Label className='emploreg'>Mothers Name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter your mothers name"  value={mothersName}
-                                onChange={(e) => setMothername(e.target.value)} required />
-                            <Form.Control.Feedback type="invalid">
 
-                            </Form.Control.Feedback>
+
+
+                    <Row className=" mb-3">
+                        <Form.Group as={Col} md="4" controlId="validationCustom01">
+                            <Form.Label className='emploreg'>Father's Name</Form.Label>
+                            <Form.Control
+                                required
+                                type="text"
+                                placeholder="Father's name"
+                                value={fathersName}
+                                onChange={(e) => setFathername(e.target.value)}
+                            />
+
                         </Form.Group>
-                        <Form.Group as={Col} md="3" controlId="validationCustom05">
-                            <Form.Label className='emploreg'>Phoneno.</Form.Label>
-                            <Form.Control type="text" placeholder="Enter your phone no."  value={phoneNo}
-                                onChange={(e) => setPhoneNo(e.target.value)} required />
-                            <Form.Control.Feedback type="invalid">
-                                {/* Please provide a valid zip. */}
-                            </Form.Control.Feedback>
+                        <Form.Group as={Col} md="4" controlId="validationCustom02">
+                            <Form.Label className='emploreg'>Mother's name</Form.Label>
+                            <Form.Control
+                                required
+                                type="text"
+                                placeholder="Mother's name"
+                                value={mothersName}
+                                onChange={(e) => setMothername(e.target.value)}
+                            />
+
                         </Form.Group>
 
-                        <Form.Group as={Col} md="3" controlId="validationCustom06">
+
+                        <Form.Group as={Col} md="4" controlId="validation">
+                            <Form.Label className='emploreg'>Phone Number </Form.Label>
+                            <Form.Control
+                                required
+                                type="number"
+                                placeholder="Enter your phone no."
+                                value={phoneNo}
+                                onChange={(e) => setPhoneNo(e.target.value)}
+                            />
+                        </Form.Group>
+
+                    </Row>
+
+                        <Row className="mb-3">
+
+                        <Form.Group as={Col} md="4" controlId="validationCustom06">
                             <Form.Label className='emploreg'>Email</Form.Label>
                             <Form.Control type="text" placeholder="Enter your Email"  required value={email}
                                 onChange={(e) => setEmail(e.target.value)} />
@@ -154,9 +173,9 @@ function FormExample() {
 
                     
 
-                           <Form.Group as={Col} md="3" controlId="validationCustom07">
+                           <Form.Group as={Col} md="4" controlId="validationCustom07">
                                 <Form.Label>Password</Form.Label>
-                                <Form.Control type="Password" placeholder="Enter your Password"
+                                <Form.Control type="Password" placeholder="Create your Password"
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
                                     required />
@@ -164,14 +183,12 @@ function FormExample() {
 
                                 </Form.Control.Feedback>
                             </Form.Group>
-
-
                     </Row>
            
 
 
-
-                     <Form.Group className="mb-3">
+<Row className="mb-3">
+<Form.Group className="mb-3">
                         <Form.Check
                             required
                             label="Agree to terms and conditions"
@@ -180,6 +197,8 @@ function FormExample() {
                             id='CheckCondition'
                         />
                     </Form.Group>
+</Row>
+                     
                     <Button type="submit" 
                     onClick={(e)=>{
                  e.preventDefault();
@@ -192,6 +211,9 @@ function FormExample() {
                     }}
                     >Submit</Button>
                 </div>
+
+
+
             </Form>
         </>
     )}

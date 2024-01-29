@@ -5,10 +5,17 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.eyeicon svg {
-    margin-top: -67px;
-    margin-left: 612px;
-}
+/* .eyeicon svg {
+    
+} */
+
+ @media (max-width: 367px) { 
+    /* .eyeicon {
+        font-size: 16px;
+        margin-bottom: 70px;
+    margin-left: 12px;
+    }  */
+} 
 .container .hadder{
     display: flex;
     justify-content: space-between;

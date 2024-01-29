@@ -38,6 +38,7 @@ import StdResultPage from './component/StdResultPage/StdResultPage.jsx'
 import ReceiveNotice from './component/ReceiveNotice/ReceiveNotice.jsx'
 import ReceivedComplaint from './component/ReceivedComplaint/ReceivedComplaint.jsx'
 import Result from './component/Result/Result.jsx'
+
 import './App.css'
 
 
@@ -114,6 +115,9 @@ function App() {
             <Route path='/adminlog/*' element={<Employeelogin />} />
             <Route path='/stdlogin/*' element={<Studentlogin />} />
             <Route path='/stdReg/*' element={<Regform />} />
+            <Route path='/Result' element={<Result />} />
+            
+
           </Routes>
 
           {
@@ -132,7 +136,9 @@ function App() {
 
                   {/* <Route path='/StdDetails' element={<StudentDetails />} /> */}
                   <Route path='/ReceiveComplaint' element={<ReceivedComplaint />} />
-                  <Route path='/Result' element={<Result />} />
+                  
+                  
+
 
 
                 </Routes>

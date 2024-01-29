@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { Container } from 'react-bootstrap';
+import { Container,Row,Col } from 'react-bootstrap';
 import { useContext, useEffect, useState } from 'react';
 import { context } from '../../App';
 import '../ReceiveNotice/ReceiveNotice.css'
@@ -36,8 +36,53 @@ function ReceiveNotice() {
                 </div>
             ))
         ) : (
-            <div>
-                <p>No notice available</p>
+           
+            <div className='notice-box'>
+                <Container>
+                <Row className="notice-row">
+                    <Col className="notice-col" lg={4}>
+                    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+                    </Col>
+
+                    <Col className="notice-col" lg={4}>
+                    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+                    </Col>
+
+                    <Col className="notice-col" lg={4}>
+                    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+                    </Col>
+                </Row>
+                </Container>
             </div>
         )}
     </Container>

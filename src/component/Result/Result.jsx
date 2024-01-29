@@ -18,7 +18,7 @@ function Result() {
               <Col className='drop-col' lg={2}>
               </Col>
               <Col className='drop-col' lg={4}>
-              <Form.Group as={Col} md="4">
+              <Form.Group as={Col} md="5">
                                 <Form.Label className='std'>Select Course</Form.Label>
                                 <Form.Select md="4" aria-label="Default select example" >
                                     <option >Course</option>
@@ -57,28 +57,38 @@ function Result() {
               </Col>
               <Col className='drop-col' lg={4}>
               
-              <Form.Group as={Col} md="4">
+              <Form.Group as={Col} md="5">
                                 <Form.Label className='std'>Select Semester</Form.Label>
                                 <Form.Select md="4" aria-label="Default select example" >
                                     <option >Course</option>
                                     <option value="Semester-1st">Semester-1st</option>
                                     <option value="Semester-2nd">Semester-2nd</option>
-                                    <option value="Semester-3rd">Semester-3rd</option>
-
-                                    
+                                    <option value="Semester-3rd">Semester-3rd</option> 
                                 </Form.Select>
                             </Form.Group>
-
-              </Col>
+                          </Col>
+                          
               <Col className='drop-col' lg={2}>
+              </Col>
+              
+            </Row>
+          </Container>
+        </div>
+
+        <div className='open-btn'>
+          <Container>
+            <Row className='opn-btn'>
+              <Col className='opn-col'lg={4}>
+              </Col>
+              <Col className='opn-col'lg={4}>
+                <button className='open'>
+                  SUBMIT
+                </button>
+              </Col>
+              <Col className='opn-col'lg={4}>
               </Col>
             </Row>
           </Container>
-
-
-
-
-
         </div>
       </div>
     </>

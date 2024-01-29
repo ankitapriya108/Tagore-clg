@@ -6,53 +6,116 @@
 
  .image{
 
-    background: url("../Image/aboutus.webp");
+    background:linear-gradient(rgba(0, 0, 0, 0.821) , rgba(0, 0, 0, 0.61) ,rgba(0, 0, 0, 0.798));
     
     background-size: cover;
     min-width: '100%';
-     height: 100vh;
+     height: auto;
+     padding-bottom: 50px;
  }  
- .image .cols h1 {
+ 
+.about-col.col-lg-7 {
     color: white;
-    text-align: center;
-    padding-top: 114px;
+    text-align: justify;
 }
-.image .cols p {
-    color: white;
+
+.about-col h4{
     text-align: center;
-    padding-top: 40px;
-    /* margin-top: 93px; */
-    /* font-size: 27px; */
-}  
+    color: white;
+    padding-top: 10px;
+}
 .heading h1{
     color: white;
     padding-top: 100px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
-@media (max-width:1318px) {
-    .image {
-        height: auto;
-    }
+.heading hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: 1.25;
+    color: white;
 }
-
-
-
-
-
-/* 
-h2 {
+.image .heading h2 {
+   padding-bottom: 30px;
     text-align: center;
+    color: yellow;
 }
-.Aboutus{
-    color: white;
-}
-.contant{
-    color: white;
 
+.about-col img {
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
+   
 }
-p {
-    text-align: start;
-    font-size: 24px;
-    margin-top: 247px;
-} */ 
+.about-principle{
+    margin-top: 90px;
+}
+.future{
+    text-align: center;
+    color: white;
+    padding-top: 50px ;
+}
+.future h2{
+    color: yellow !important;
+    padding-bottom: 10px;
+}
+.signs{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+.signs svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+    font-size: 70px;
+}
+.vision-box h2{
+    text-align: center;
+    color: yellow !important;
+    padding-top: 40px;
+}
+.vision-box{
+    color: white;
+    text-align: justify;
+}
+.vision-col img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+   
+}
+.vision-col ul li {
+    padding: 10px 0;
+}
+
+.mission-box h2{
+    text-align: center;
+    color: yellow !important;
+    padding-top: 40px;
+}
+.mission-box{
+    color: white;
+    text-align: justify;
+}
+.mission-col img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+   
+}
+.mission-col ul li {
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+

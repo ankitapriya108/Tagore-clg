@@ -10,6 +10,13 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { context } from '../../App';
 import {EyeInvisibleOutlined , EyeOutlined} from "@ant-design/icons"
+// import React from 'react';
+// import { render } from 'react-dom';
+// // import Hello from './Hello';
+// import fontawesome from '@fortawesome/fontawesome'
+// import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+// import { faCheckSquare, faCoffee } from '@fortawesome/fontawesome-free-solid'
+
 
 
 function FormExample() {
@@ -20,21 +27,37 @@ function FormExample() {
     const [password, setPassword] = useState()
     const [visible , setVisible] = useState(false)
     const [agreeTerms, setAgreeTerms] = useState(false);
-
+ 
+    // const styles = {
+    //     fontFamily: 'sans-serif',
+    //     textAlign: 'center',
+    //   };
+      
+    //   fontawesome.library.add(faCheckSquare, faCoffee);
+      
+    //   const App = () => (
+    //     <div style={styles}>
+    //       <FontAwesomeIcon icon="check-square" /><br /><br />
+    //       <FontAwesomeIcon icon="coffee" />
+    //     </div>
+    //   );
+      
+    //   render(<App />, document.getElementById('root'));
+      
     const StudentLogin = async () => {
         let result = await axios.post(`${serverLink}/data/login`, {
             Username: username,
             Password: password,
         })
         result = result.data
-        // console.log(result.data)
+       
         if (result.Username) {
            alert("Successfull login")
 
            const setUserData = () =>{
             localStorage.setItem("userData",JSON.stringify(result))
            }
-            // console.log(localStorage.getItem("userData"));
+           
       
            setUserData()
            setStudentLoggedIn(true)
@@ -91,19 +114,30 @@ function FormExample() {
                         <Row className="mb-3">
                             <Form.Group as={Col} md="7" controlId="validationCustom05">
                                 <Form.Label>Password</Form.Label>
+                                
                                 <Form.Control type={visible ? "text" : "password"}
                                  placeholder="Enter your Password" 
+                                
                                 value={password}
+
                                 onChange={(e)=> setPassword(e.target.value)}
                                
                                 required />
+                                 
                                  <div className="eyeicon" onClick={()=>{setVisible(!visible)}}>
                                 {visible ? <EyeOutlined/>:<EyeInvisibleOutlined/> }
-                              </div>
-                                <Form.Control.Feedback type="invalid">
+                              </div> 
 
+{/* <FontAwesomeIcon icon="fa-solid fa-eye" /> */}
+                                <Form.Control.Feedback type="invalid"  >
+{/* // onClick={()=>{setVisible(!visible)}}> */}
+{/* {visible ? <EyeOutlined/>:<EyeInvisibleOutlined/> } */}
                                 </Form.Control.Feedback>
                             </Form.Group>
+
+
+
+
 
 
 
